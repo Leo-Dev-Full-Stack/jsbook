@@ -1,11 +1,11 @@
 <script>
-    const a = "20"
-    const b = a * 2     // b = 40
-    const c = a / 2     // c = 10
-    const d = a - 2     // d = 18
-    const e = a + 2     // e = 202 (var a está com valor em string por conta das "" nas outras operações a linguagem converte texto em número mas com adição texto é concatenado, poderia ser resolvido deixando var a como valor em numero 20 e não "20" pois aspas são para STRINGS)
-    alert("e: " + e)    // exibe o valor de uma variável
-    const f = b + c      // f = 50 pois var b, c e d ja foram transformadas em numero diferente de var a e var e que são strings
-    const g = Number(a) + 30 // outra forma de converter texto "100" em número 100 seria com os métodos, tais como Number(). Repare que a variável a dentro do método Number(a) foi somada com 30 em vez de concatenada, resultando em 50 e não 2030 como na var e
-    console.log(a, b, c, d, e, f, g)
+    const x = "20"
+    const b = x * 2     // b = 40
+    const c = x / 2     // c = 10
+    const d = x - 2     // d = 18
+    const e = x + 2     // e = 202 the variable x is of type string because it has " " in its assignment, so a text with + is concatenated but if it is a number + number occurs sum
+    alert("e: " + e)    // data output from a variable (print)
+    const f = b + c      // b and c have already been turned into numbers instead of strings like the variable x
+    const g = Number(x) + 30 // To convert a "string" character text into a number we can use methods like Number() with the variable in parentheses
+    console.log(x, b, c, d, e, f, g)
 </script>
