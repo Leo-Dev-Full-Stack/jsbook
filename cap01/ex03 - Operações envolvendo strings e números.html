@@ -6,5 +6,6 @@
     const e = a + 2     // e = 202 (var a está com valor em string por conta das "" nas outras operações a linguagem converte texto em número mas com adição texto é concatenado, poderia ser resolvido deixando var a como valor em numero 20 e não "20" pois aspas são para STRINGS)
     alert("e: " + e)    // exibe o valor de uma variável
     const f = b + c      // f = 50 pois var b, c e d ja foram transformadas em numero diferente de var a e var e que são strings
-    console.log(a, b, c, d, e, f)
+    const g = Number(a) + 30 // outra forma de converter texto "100" em número 100 seria com os métodos, tais como Number(). Repare que a variável a dentro do método Number(a) foi somada com 30 em vez de concatenada, resultando em 50 e não 2030 como na var e
+    console.log(a, b, c, d, e, f, g)
 </script>
