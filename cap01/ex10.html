@@ -1,0 +1,13 @@
+<!-- Elaborar um programa para uma pizarria, o qual leia o valor total de uma conta e quantos clientes vão pagar.
+Calcule e informe o valor a ser pago por cliente.
+Exemplo:
+Valor da conta: R$90,00
+Número de clientes: 3
+Valor po cliente: R$30,00 -->
+<meta charset="UTF-8">
+<script>
+    const theCheck = Number(prompt("How much was the bill?: "))                                     // input price of the check
+    const people = Number(prompt("How many people will split the bill?? "))                         // input number of people who will pay
+    const perPerson = theCheck / people                                                             // calculate how much each person will pay
+    alert(`The Check is: $${theCheck}\n Divided by: ${people}\n Each one will pay: $${perPerson}`)  // calculate how much each person will pay
+</script>
