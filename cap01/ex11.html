@@ -4,3 +4,12 @@ Exemplo:
 Preço: R$60,00
 À Vista: R$54,00
 Ou 3x de: R$20,00 -->
+<meta charset="UTF-8">
+<script>
+    const price = Number(prompt("Type the price: R$"))  // input data price
+    const sale = price * 0.10                           // calculate the discount
+    const salePrice = price - sale                      // shows the total amount with discount applied
+    const creditCard = price / 3                        // calculates the amount divided into 3x on the card
+    const priceCreditCard = creditCard.toFixed(2)       // displays the amount in installments with 2 decimal places
+    alert(`\nThe price of the product is: → R$${price}\n\nPayment in cash with 10% discount: → R$${salePrice}\n\n3x on card: → R$${priceCreditCard}`)   // output of the entered data
+</script>
