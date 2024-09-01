@@ -4,3 +4,11 @@ Exemplo:
 1ª Nota: 7.0
 2ª Nota: 8.0
 Média: 7.5 -->
+<meta charset="UTF-8">
+<script>
+    const schoolSubject = prompt("Please enter the subject for which you would like to calculate your average grade: ") // input class
+    const gradeOne = Number(prompt("Type your grade: "))                                                                // First note entry
+    const gradeTwo = Number(prompt("Type yourd other grade: "))                                                         // Second note entry
+    const averageGrade = (gradeOne + gradeTwo) / 2                                                                      // calculate the average
+    alert(`Your ${schoolSubject} grade was: ${averageGrade}`)                                                           // prints the entered data
+</script>
